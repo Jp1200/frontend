@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <Video video={samp}/>
+        <Video video={samp} duration={600}/>
       </header>
     </div>
   );
