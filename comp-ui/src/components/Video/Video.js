@@ -1,13 +1,16 @@
 import React from 'react';
+import './Video.css';
 import {Controller, Scene} from 'react-scrollmagic';
 function Video(props){
   console.log(props);
   return(
-    <div>
+    <div className="video-div">
       <Controller>
-        <Scene duration={props.duration}/>
+        <Scene duration={props.duration} triggerElement={'video-div'}
+        >
+        <video src={props.video}/>
+        </Scene>
       </Controller>
-      <video src={props.video} autoplay={true}/>
     </div>
   )
 }
